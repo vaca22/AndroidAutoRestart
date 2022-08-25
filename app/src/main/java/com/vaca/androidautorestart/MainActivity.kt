@@ -9,10 +9,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        Thread{
-            sleep(3000)
-            val a=gaga[0]
-        }.start()
+//        Thread{
+//            sleep(3000)
+//            val a=gaga[0]
+//        }.start()
+
+        LogUtils.e(this,"gaga")
+        LogUtils.v(this,"gagax")
 
     }
 }
